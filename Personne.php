@@ -17,10 +17,13 @@ class Personne
     const NOMBRE_DE_MAINS = 2;
 
     //méthodes
-    public function __construct() 
+    public function __construct(string $nom, string $prenom, string $dateDeNaiss, string $taille, string $sexe) 
     {
         $this->nom=$nom;
         $this->prenom=$prenom;
+        $this->dateDeNaissance=$dateDeNaiss;
+        $this->taille=$taille;
+        $this->sexe=$sexe;
     }
 
     public function boire()
